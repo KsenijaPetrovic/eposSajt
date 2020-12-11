@@ -1,0 +1,49 @@
+html{
+    background-image: url("https://scontent.fbeg5-1.fna.fbcdn.net/v/t1.15752-9/130896416_810046409777231_8868292720889111191_n.jpg?_nc_cat=111&ccb=2&_nc_sid=ae9488&_nc_ohc=0vTFpmLsJ7IAX8UFoFJ&_nc_ht=scontent.fbeg5-1.fna&oh=cc6d627eee6857d410f5c5c5cc6d48bf&oe=5FF753EE");
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 15px whitesmoke;
+    font-size: xx-large;
+}
+.vertical-menu{
+    
+    background-color: rgba(255, 255, 255, 0.308);
+    size: 100%;
+    text-align: center;
+    word-spacing: 290px;
+    font-size: large;
+} 
+a{
+    text-decoration: underline;
+    text-shadow: 2px 2px 15px whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+    background-color: whitesmoke;
+}
+p{
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    word-spacing: 5px;
+    line-height: 10mm;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+img{
+    height: 350px;
+    margin-left: 15px;
+}
+label{
+    background-color: rgba(255, 255, 255, 0.459);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nazad{
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+

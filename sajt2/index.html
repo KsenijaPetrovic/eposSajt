@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <title>Odeca</title>
+</head>
+
+<body>
+    <h1>Odeća</h1>
+    <div class="vertical-menu">
+        <a href="http://localhost:8081/domaci/sajt/index.html">Početna</a>
+        <a href="http://localhost:8081/domaci/sajt2/index.html" class="active" onclick="handleAClick(event)">Odeća</a>
+        <a href="http://localhost:8081/domaci/sajt3/index.html">Slike</a>
+        <a href="http://localhost:8081/domaci/sajt4/index2.html">Kupovina</a>
+      </div>
+    <p>Na ovoj stranici možete videti ponudu odeće koju mozete i naručiti.</p>
+    <div class="gallery">
+
+        <div id="prvi">
+            <a data-fancybox="gallery" href="slike/velike/beli komplet, lepeza.jpg" data-caption="Beli komplet, lepeza"><img src="slike/beli komplet, lepeza.jpg"></a>
+            <hr>
+            <label><i>Beli komplet, lepeza</i> <b>5850 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/beli komplet, preklop.jpg" data-caption="Beli komplet, preklop"><img src="slike/beli komplet, preklop.jpg"></a>
+            <hr>
+            <label><i>Beli komplet, preklop </i><b>5850 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/beli komplet, rolka.jpg" data-caption="Beli komplet, rolka"><img src="slike/beli komplet, rolka.jpg"></a>
+            <hr>
+            <label><i>Beli komplet, rolka</i> <b>5850 RSD</b></label>
+        </div>
+
+        <div id="drugi">
+            <a data-fancybox="gallery" href="slike/velike/bordo bluza.jpg" data-caption="Bordo bluza"><img src="slike/bordo bluza.jpg"></a>
+            <hr>
+            <label><i>Bordo bluza</i> <b>2340 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/plava bluza.jpg" data-caption="Plava bluza"><img src="slike/plava bluza.jpg"></a>
+            <hr>
+            <label><i>Plava bluza </i><b>2340 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/cvetna bluza_pantalone.jpg" data-caption="Cvetna bluza, pantalone"><img src="slike/cvetna bluza_pantalone.jpg"></a>
+            <hr>
+            <label><i>Cvetna bluza</i> <b>2340 RSD</b> pantalone <b>3510 RSD</b></label>   
+        </div>
+
+        <div id="treci">
+            <a data-fancybox="gallery" href="slike/zuta bluza_plis suknja.jpg" data-caption="Žuta bluza, plišana suknja"><img src="slike/zuta bluza_plis suknja.jpg"></a>
+            <hr>
+            <label><i>Žuta bluza </i><b>2340 RSD</b> plišana suknja <b>3510 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/cvetna suknja.jpg" data-caption="Cvetna suknja"><img src="slike/cvetna suknja.jpg"></a>
+            <hr>
+            <label><i>Cvetna suknja </i><b>3510 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/karirana suknja.jpg" data-caption="Karirana suknja"><img src="slike/karirana suknja.jpg"></a>
+            <hr>
+            <label><i>Karirana suknja</i> <b>3510 RSD</b></label>
+        </div>
+
+        <div id="cetvrti">
+            <a data-fancybox="gallery" href="slike/velike/teget haljina.jpg" data-caption="Teget haljina"><img src="slike/teget haljina.jpg"></a>
+            <hr>
+            <label><i>Teget haljina </i><b>4680 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/cvetna haljina.jpg" data-caption="Cvetna haljina"><img src="slike/cvetna haljina.jpg"></a>
+            <hr>
+            <label><i>Cvetna haljina</i> <b>4680 RSD</b></label>
+            <hr>
+            <a data-fancybox="gallery" href="slike/velike/zuta haljina.jpg" data-caption="Žuta haljina"><img src="slike/zuta haljina.jpg"></a>
+            <hr>
+            <label><i>Žuta haljina </i><b>7020 RSD</b></label>
+        </div>
+        
+    </div>
+
+    <button id="nazad" onclick="window.history.back()">Nazad</button>
+    
+</body>
+
+</html>
