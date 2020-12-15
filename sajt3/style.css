@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(slike/pozadina1.jpeg);
+}
+h1{
+    text-align: center;
+}
+.vertical-menu{
+    
+    background-color: rgba(255, 255, 255, 0.308);
+    size: 100%;
+    text-align: center;
+    word-spacing: 20vw;
+    font-size: large;
+} 
+a{
+    text-decoration: underline;
+    text-shadow: 2px 2px 15px whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+.div1{
+    padding-left: 15%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 10vw; 
+    
+}
+.div2{
+    padding-left: 15%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 10vw;
+}
+.div3{
+    padding-left: 15%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 10vw;
+}
+img:hover{
+    transition: 1s;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+}
+
+

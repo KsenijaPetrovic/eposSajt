@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(slike/pozadina2.jpeg);
+    text-align: center;
+}
+.najveci{
+    margin-left: 18%;
+}
+h1{
+    text-align: center;
+}
+.vertical-menu{
+    
+    background-color: rgba(255, 255, 255, 0.308);
+    size: 100%;
+    text-align: center;
+    word-spacing: 20vw;
+    font-size: large;
+} 
+a{
+    text-decoration: underline;
+    text-shadow: 2px 2px 15px whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+.parent{
+    right: 0; 
+    text-align: center;
+}
+.parent .left, .parent .center, .parent .right{
+    display: inline-block; 
+}
+.parent .left { 
+    float: left; 
+}
+.parent .right { 
+    float: right; 
+} 
+.uslovi{
+    font-weight: bold;
+    color: red;
+}
+#btn2{
+    width: 100px;
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#btn2:hover{
+    filter: grayscale(100%);
+    transform: scale(2);
+}
+.izbor{
+    text-align: center;
+}
+input, textarea {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:rgb(54, 54, 54);
+}
+input:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+textarea:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.select{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: none; 
+}
+
+
+

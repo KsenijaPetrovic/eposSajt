@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaša korpa</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="select.js"></script>
+    
+</head>
+<body>
+    <h1>DOBRODOŠLI NA STRANICU ZA KUPOVINU</h1>
+    <div class="vertical-menu">
+        <a href="../sajt/index.html">Početna</a>
+        <a href="../sajt2/index.html">Odeća</a>
+        <a href="../sajt3/index.html">Slike</a>
+        <a href="index2.html" class="active" onclick="handleAClick(event)">Kupovina</a>
+      </div>
+
+    <!-- <div class="div1">
+        <button id="btn1">Proizvodi</button>
+    </div> -->
+<div class="najveci">
+<div class="parent">
+    <div class="left">
+        <br>
+        <br>
+        <h1>Podaci:</h1>
+        <p>Puno ime i prezime:</p> 
+        <input type="text" id="textIme">
+        <p>E-mail:</p>
+        <input type="text"><br>
+        <p>Pravno lice:</p>
+        <select class="select" style="width: 200px;">
+            <option value="Da">Da</option>
+            <option value="Ne">Ne</option>
+        </select>
+        <p>Grad:</p>
+        <input type="text" id="textGrad">
+        <p>Adresa:</p>
+        <input type="text" id="textAdresa">
+        <p>Broj telefona:</p>
+        <input type="text" size="2"> /
+        <input type="text" size="6">
+        <p>Vaš datum rođenja:</p>
+        <input type="text" size="2"> /
+        <input type="text" size="2"> /
+        <input type="text" size="4">.
+        <p>Da li želite da upakujemo kao poklon?</p>
+        <select class="select" style="width: 200px;">
+            <option value="Da">Da</option>
+            <option value="Ne">Ne</option>
+        </select>
+        <br>
+        <p>Dodatne napomene:</p>
+        <textarea name="" cols="30" rows="25">Napišite ovde...</textarea>
+        </div>
+    </div>
+    <br>
+    <br>
+        
+    <h1>Plaćanje:</h1>
+    <p>Izaberite način plaćanja:</p>
+            <input type="radio" name="placanje"> Plaćanje po preuzimanju
+            <input type="radio" name="placanje"> Vremensko plaćanje
+            <input type="radio" name="placanje"> Plaćanje karticom
+            <br>
+            <br>
+    <h1>Dostava:</h1>
+    <p>Izaberite načini dostave:</p>
+        <select class="select" style="width: 200px">
+            <option value="Adresa">Isporuka na adresu</option>
+            <option value="Licno">Lično preuzimanje</option>
+        </select>   
+        <br>
+        <br>    
+
+
+        <h1>Narudžbina:</h1>
+        <div id="izbor">
+            <div>
+              <form>
+          
+                <h2>Izaberite bluze/haljine koje želite da naručite:</h2>
+                <!-- <p>Napomena: Ukoliko naručite tri ili više proizvoda očekuje Vas popust!</p> -->
+                <input name="proizvod" value="2340" type="checkbox" id="p1" onclick="totalIt()" /> Bordo bluza
+                <br>
+                <input name="proizvod" value="2340" type="checkbox" id="p2" onclick="totalIt()" /> Plava bluza
+                <br>
+                <input name="proizvod" value="2340" type="checkbox" id="p3" onclick="totalIt()" /> Žuta bluza
+                <br>
+                <input name="proizvod" value="2340" type="checkbox" id="p4" onclick="totalIt()" /> Cvetna bluza
+                <br>
+                <input name="proizvod" value="4680" type="checkbox" id="p5" onclick="totalIt()" /> Cvetna haljina
+                <br>
+                <input name="proizvod" value="4680" type="checkbox" id="p6" onclick="totalIt()" /> Teget haljina
+                <br>
+                <input name="proizvod" value="4680" type="checkbox" id="p7" onclick="totalIt()" /> Žuta haljina 
+          
+                <h2>Izaberite pantalone/suknje/komplete koje želite da naručite:</h2>
+                <input name="proizvod" value="3510" type="checkbox" id="p8" onclick="totalIt()"/>
+                Teget pantalone<br>
+                <input name="proizvod" value="3510" type="checkbox" id="p9" onclick="totalIt()"/>
+                Karirana suknja<br>
+                <input name="proizvod" value="3510" type="checkbox" id="p10" onclick="totalIt()"/>
+                Cvetna suknja<br>
+                <input name="proizvod" value="3510" type="checkbox" id="p11" onclick="totalIt()"/>
+                Pliš suknja<br>
+                <input name="proizvod" value="5850" type="checkbox" id="p12" onclick="totalIt()"/>
+                Beli komplet/preklop<br>
+                <input name="proizvod" value="5850" type="checkbox" id="p13" onclick="totalIt()"/>
+                Beli komplet/rolka<br>
+                <input name="proizvod" value="5850" type="checkbox" id="14" onclick="totalIt()"/>
+                Beli komplet/lepeza<br>
+          
+                <label>
+                  <br> Ukupno za naplatu:  
+                  <input value="0.00RDS" readonly type="text" id="total" />
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <br>
+
+     <footer class="footer">
+            <p class="uslovi">Uslovi kupovine moraju biti prihvaćeni!</p>
+            <input type="checkbox" id="check" onclick="uslov()"> Prihvatam uslove kupovine.
+            <p id="text" style="display: none;">Pošto ste prihvatili uslove kupovine, možete da potvrdite istu.</p>
+        </footer>
+        <br>
+        <button id="btn2" onclick="return provera()">Potvrdi kupovinu</button>
+        <p>Call centar: 011 123 45 67</p>
+    
+            <script>
+                var now = new Date();
+                var sat = now.getHours();
+                var minut = now.getMinutes();
+                var sekunde = now.getSeconds();
+                document.write("Trenutno vreme je: " + sat + ":" + minut + ":" + sekunde);
+    
+                var dan = now.getDate();
+                var mesec = now.getMonth()+1;
+                var godina = now.getFullYear();
+                document.write("<br>Današnji datum je: " + dan + "." + mesec + "." + godina);
+            </script>
+    </div>
+        
+</body>
+</html>
